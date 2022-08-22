@@ -11,11 +11,102 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Document</title>
+    <title>Weather App</title>
   </head>
   <body>
-    <div class="container">
-      <a href="" class="btn btn-primary">Click me </a>
+    <div class="container text-center">
+      <div class="weather-app">
+        <div class="row g-0 text-center">
+          <div class="col-sm-6 col-md-8">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-6 col-sm-3">
+                  <div class="card">
+                    <div class="card-header">Tuesday</div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                        <p>🌤️</p>
+                        <footer class="blockquote-footer">
+                          <h6 class="card-weather">Sunny</h6>
+                          <h6 class="card-temp"><strong>85°</strong> | 72°</h6>
+                        </footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <div class="card">
+                    <div class="card-header">Tuesday</div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                        <p>🌤️</p>
+                        <footer class="blockquote-footer">
+                          <h6 class="card-weather">Sunny</h6>
+                          <h6 class="card-temp"><strong>85°</strong> | 72°</h6>
+                        </footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Force next columns to break to new line -->
+                <div class="w-100"></div>
+
+                <div class="col-6 col-sm-3">
+                  <div class="card">
+                    <div class="card-header">Tuesday</div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                        <p>🌤️</p>
+                        <footer class="blockquote-footer">
+                          <h6 class="card-weather">Sunny</h6>
+                          <h6 class="card-temp"><strong>85°</strong> | 72°</h6>
+                        </footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <div class="card">
+                    <div class="card-header">Tuesday</div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                        <p>🌤️</p>
+                        <footer class="blockquote-footer">
+                          <h6 class="card-weather">Sunny</h6>
+                          <h6 class="card-temp"><strong>85°</strong> | 72°</h6>
+                        </footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <h1>🌦️</h1>
+              <p>Partly Cloudy</p>
+              <br />
+              <h1>
+                <div class="float-left">
+                  <span class="temperature" id="temperature">75</span
+                  ><span class="units">
+                    <a href="#" id="celsius-link">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </span>
+                </div>
+              </h1>
+              <h2 id="city-searched">St. Augustine</h2>
+              <h3 id="current-day-time"></h3>
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> m/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="src/app.js"></script>
     <script
