@@ -7,9 +7,10 @@ body {
   margin: 30px auto;
   padding: 20px;
   border: 1px solid #000;
+  border-radius: 10px;
 }
+
 .units {
-  text-decoration-line: none;
   position: relative;
   font-size: 16px;
   top: -34px;
@@ -21,9 +22,13 @@ body {
   line-height: 1;
   font-weight: 400;
 }
-.weather-temperature {
-  padding: 30px;
+.d-flex {
+  text-align: center;
 }
-humidity {
-  text-decoration: none;
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
 }
