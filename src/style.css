@@ -1,6 +1,29 @@
+body {
+  font-family: "PT Mono", monospace;
+}
+
 .weather-app {
   max-width: 700px;
   margin: 30px auto;
   padding: 20px;
   border: 1px solid #000;
+}
+.units {
+  text-decoration-line: none;
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+.temperature {
+  text-align: center;
+  color: rgb(33, 33, 33);
+  font-size: 100px;
+  line-height: 1;
+  font-weight: 400;
+}
+.weather-temperature {
+  padding: 30px;
+}
+humidity {
+  text-decoration: none;
 }
