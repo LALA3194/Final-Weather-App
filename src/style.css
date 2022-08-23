@@ -1,6 +1,18 @@
 body {
   font-family: "PT Mono", monospace;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+.card-body h2 {
+  color: #000;
+  font-size: 20px;
+}
 
 .weather-app {
   max-width: 700px;
@@ -10,25 +22,19 @@ body {
   border-radius: 10px;
 }
 
-.units {
+.weather-temperature .units {
   position: relative;
   font-size: 16px;
   top: -34px;
 }
-.temperature {
+.weather-temperature strong {
+  display: inline;
   text-align: center;
   color: rgb(33, 33, 33);
-  font-size: 100px;
+  font-size: 64px;
   line-height: 1;
   font-weight: 400;
 }
 .d-flex {
   text-align: center;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style: none;
 }
