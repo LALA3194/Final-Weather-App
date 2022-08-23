@@ -9,9 +9,12 @@ li {
   list-style: none;
 }
 
-.card-body h2 {
+.card-body h1 {
   color: #000;
-  font-size: 20px;
+  font-size: 30px;
+}
+.card-body .description {
+  text-transform: capitalize;
 }
 
 .weather-app {
