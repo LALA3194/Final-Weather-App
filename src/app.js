@@ -39,10 +39,22 @@ function displayWeatherCondition(response) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+  document
+    .querySelector("#main-icon")
+    .setAttribute("alt", response.data.weather[0].description);
   console.log(response);
 }
 
-let apiKey = "25ff250e18c21d3ed78d0fa66517f0aa";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=london&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "25ff250e18c21d3ed78d0fa66517f0aa";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeatherCondition);
+}
+function handleSubmit(event) {
+  event.preventDefault();
+  let inputCityElement = document.querySelector("#input-city");
+  search(inputCityElement.value);
+}
 
-axios.get(apiUrl).then(displayWeatherCondition);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
