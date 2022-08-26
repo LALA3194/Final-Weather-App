@@ -41,6 +41,12 @@ li {
   line-height: 1;
   font-weight: 400;
 }
+.weather-temperature .active {
+  color: #000;
+}
+.weather-temperature .selected {
+  color: #9e9ea8;
+}
 .d-flex {
   text-align: center;
 }
