@@ -12,6 +12,9 @@ ul {
 li {
   list-style: none;
 }
+small {
+  background-color: #ffff;
+}
 
 .card {
   backdrop-filter: blur(10px);
@@ -23,7 +26,10 @@ li {
 .card-body .description {
   text-transform: capitalize;
 }
-
+.weather-app-wrapper {
+  max-width: 700px;
+  margin: 30px auto;
+}
 .weather-app {
   max-width: 700px;
   margin: 30px auto;
