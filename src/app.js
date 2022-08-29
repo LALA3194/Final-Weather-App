@@ -18,6 +18,38 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = '<div class="row">';
+  let days = ["Tuesday", "Wednesday", "Thursday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-3 col-sm-3">
+      <div class="card">
+        <div class="card-header">${day}</div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>🌤️</p>
+            <footer class="blockquote-footer">
+              <h6 class="card-weather">Sunny</h6>
+              <h6 class="card-temp">
+                <strong>85°</strong> | 72°
+              </h6>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>})
+ 
+  `;
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+  });
+}
+
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -81,3 +113,4 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 search("Miami");
+displayForecast();

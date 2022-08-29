@@ -43,120 +43,51 @@
               </div>
             </div>
           </form>
-          <div class="row g-0 text-center">
-            <div class="col-sm-6 col-md-8">
-              <div class="container text-center">
-                <div class="row">
-                  <div class="col-6 col-sm-4">
-                    <div class="card">
-                      <div class="card-header">Tuesday</div>
-                      <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                          <p>🌤️</p>
-                          <footer class="blockquote-footer">
-                            <h6 class="card-weather">Sunny</h6>
-                            <h6 class="card-temp">
-                              <strong>85°</strong> | 72°
-                            </h6>
-                          </footer>
-                        </blockquote>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-sm-4">
-                    <div class="card">
-                      <div class="card-header">Tuesday</div>
-                      <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                          <p>🌤️</p>
-                          <footer class="blockquote-footer">
-                            <h6 class="card-weather">Sunny</h6>
-                            <h6 class="card-temp">
-                              <strong>85°</strong> | 72°
-                            </h6>
-                          </footer>
-                        </blockquote>
-                      </div>
-                    </div>
-                  </div>
 
-                  <!-- Force next columns to break to new line -->
-                  <div class="w-100"></div>
+          <div class="weather-forecast" id="forecast">
+            
+          </div>
 
-                  <div class="col-6 col-sm-4">
-                    <div class="card">
-                      <div class="card-header">Tuesday</div>
-                      <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                          <p>🌤️</p>
-                          <footer class="blockquote-footer">
-                            <h6 class="card-weather">Sunny</h6>
-                            <h6 class="card-temp">
-                              <strong>85°</strong> | 72°
-                            </h6>
-                          </footer>
-                        </blockquote>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 col-sm-4">
-                    <div class="card">
-                      <div class="card-header">Tuesday</div>
-                      <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                          <p>🌤️</p>
-                          <footer class="blockquote-footer">
-                            <h6 class="card-weather">Sunny</h6>
-                            <h6 class="card-temp">
-                              <strong>85°</strong> | 72°
-                            </h6>
-                          </footer>
-                        </blockquote>
-                      </div>
-                    </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="#" alt="clear" id="main-icon" />
+                <p class="description" id="temp-description"></p>
+                <br />
+                <div class="d-flex justify-content-center weather-temperature">
+                  <div>
+                    <strong id="temperature"></strong
+                    ><span class="units">
+                      <a href="#" id="fahrenheit-link" class="active">°F</a>|<a
+                        href="#"
+                        id="celsius-link"
+                        class="selected"
+                        >°C</a
+                      >
+                    </span>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="col-6 col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <img src="#" alt="clear" id="main-icon" />
-                  <p class="description" id="temp-description"></p>
-                  <br />
-                  <div
-                    class="d-flex justify-content-center weather-temperature"
-                  >
-                    <div>
-                      <strong id="temperature"></strong
-                      ><span class="units">
-                        <a href="#" id="fahrenheit-link" class="active">°F</a
-                        >|<a href="#" id="celsius-link" class="selected">°C</a>
-                      </span>
-                    </div>
-                  </div>
-                  <h1 id="city"></h1>
-                  <h3 id="current-day-time"></h3>
-                  <ul>
-                    <li>Humidity: <span id="humidity"></span>%</li>
-                    <li>Wind: <span id="wind"></span> m/h</li>
-                  </ul>
-                </div>
+                <h1 id="city"></h1>
+                <h3 id="current-day-time"></h3>
+                <ul>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span> m/h</li>
+                </ul>
               </div>
             </div>
           </div>
+
+          <small>
+            <a
+              href="https://github.com/LALA3194/Final-Weather-Appp"
+              target="_blank"
+              >Open-source code</a
+            >
+            by Laura Rodriguez
+          </small>
         </div>
-        <small>
-          <a
-            href="https://github.com/LALA3194/Final-Weather-Appp"
-            target="_blank"
-            >Open-source code</a
-          >
-          by Laura Rodriguez
-        </small>
       </div>
-    </div>
+    
 
     <script src="src/app.js"></script>
     <script
