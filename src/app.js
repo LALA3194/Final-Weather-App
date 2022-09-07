@@ -56,9 +56,7 @@ function displayForecast(response) {
                 </div>
                 <div class="col-auto">
                 <img
-          src="http://openweathermap.org/img/wn/${
-            forecastDay.weather[0].icon
-          }@2x.png"
+          src="img/f${forecastDay.weather[0].icon}.png"
           alt=""
           width="50"
         />
