@@ -24,6 +24,9 @@ small {
 small .open-source {
   color: #9fd3c7;
 }
+small .icon-link {
+  color: #9fd3c7;
+}
 
 .btn {
   background: #385170;
@@ -60,6 +63,9 @@ small .open-source {
   text-align: center;
   padding: 20px;
   background: #9fd3c7c0;
+}
+.today-weather .main-icon {
+  max-width: 100px;
 }
 .today-weather .description {
   text-transform: capitalize;
