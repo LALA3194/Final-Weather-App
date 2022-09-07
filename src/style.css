@@ -1,8 +1,13 @@
 body {
   font-family: "PT Mono", monospace;
-  background: #a8dde2;
+  color: #385170;
+  background: #142d4c;
   background-size: cover;
   background-repeat: no-repeat;
+}
+h1,
+h3 {
+  color: #142d4c;
 }
 
 ul {
@@ -11,18 +16,24 @@ ul {
 }
 li {
   list-style: none;
+  text-shadow: 5px 5px 10px rgba(1, 101, 98, 0.4);
 }
 small {
+  color: #ececec;
+}
+small .open-source {
+  color: #9fd3c7;
 }
 
 .btn {
-  background: #068692;
+  background: #385170;
   color: #ffff;
   transition: all 200ms ease-in-out;
-  box-shadow: rgba(3, 135, 131, 0.2) 10px 10px 15px 0;
+  box-shadow: rgba(0, 30, 29, 0.397) 5px 5px 10px 0;
 }
 .btn:hover {
   cursor: pointer;
+  color: #385170;
   opacity: 0.7;
 }
 .weather-app-wrapper {
@@ -35,25 +46,30 @@ small {
   margin: 30px auto;
   padding: 20px;
   border: 1px solid #dadde1;
-  box-shadow: 0px 2px 20px 6px rgba(3, 135, 131, 0.2);
+  background-color: #ececec;
+  box-shadow: 0px 2px 20px 6px rgba(32, 53, 53, 0.845);
   border-radius: 10px;
 }
+
 .today-weather {
   position: relative;
   max-width: 250px;
   border: 1px solid #dadde1;
-  box-shadow: 0px 2px 20px 6px rgba(3, 135, 131, 0.2);
+  box-shadow: 0px 2px 20px 6px rgba(129, 183, 182, 0.397);
   border-radius: 5px;
   text-align: center;
   padding: 20px;
-  background-color: rgba(217, 217, 217, 0.07);
+  background: #9fd3c7;
 }
 .today-weather .description {
   text-transform: capitalize;
+  text-shadow: 5px 5px 10px rgba(1, 119, 115, 0.21);
+  color: #385170;
 }
+
 .weather-temperature .units {
   position: relative;
-  font-size: 16px;
+  font-size: 20px;
   top: -34px;
 }
 .units a {
@@ -62,16 +78,18 @@ small {
 .weather-temperature strong {
   display: inline;
   text-align: center;
-  color: rgb(33, 33, 33);
-  font-size: 64px;
+  font-size: 60px;
   line-height: 1;
   font-weight: 400;
+  color: #142d4c;
 }
 .weather-temperature .active {
-  color: #000;
+  color: #142d4c;
+  font-weight: bolder;
 }
 .weather-temperature .selected {
-  color: #9e9ea8;
+  color: #385170;
+  text-shadow: 5px 5px 10px rgba(1, 119, 115, 0.21);
 }
 .d-flex {
   text-align: center;
