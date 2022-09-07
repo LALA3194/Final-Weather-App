@@ -33,7 +33,8 @@ small .open-source {
 }
 .btn:hover {
   cursor: pointer;
-  color: #385170;
+  background: #385170;
+  color: #9fd3c7;
   opacity: 0.7;
 }
 .weather-app-wrapper {
@@ -46,7 +47,7 @@ small .open-source {
   margin: 30px auto;
   padding: 20px;
   border: 1px solid #dadde1;
-  background-color: #ececec;
+  background-color: rgba(193, 193, 193, 0.07);
   box-shadow: 0px 2px 20px 6px rgba(32, 53, 53, 0.845);
   border-radius: 10px;
 }
@@ -55,11 +56,10 @@ small .open-source {
   position: relative;
   max-width: 250px;
   border: 1px solid #dadde1;
-  box-shadow: 0px 2px 20px 6px rgba(129, 183, 182, 0.397);
   border-radius: 5px;
   text-align: center;
   padding: 20px;
-  background: #9fd3c7;
+  background: #9fd3c7c0;
 }
 .today-weather .description {
   text-transform: capitalize;
