@@ -18,10 +18,16 @@ small {
 .btn {
   background: #068692;
   color: #ffff;
+  transition: all 200ms ease-in-out;
+  box-shadow: rgba(3, 135, 131, 0.2) 10px 10px 15px 0;
 }
-
-.today-weather .description {
-  text-transform: capitalize;
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.weather-app-wrapper {
+  max-width: 700px;
+  margin: 30px auto;
 }
 
 .weather-app {
@@ -35,9 +41,15 @@ small {
 .today-weather {
   position: relative;
   max-width: 250px;
+  border: 1px solid #dadde1;
+  box-shadow: 0px 2px 20px 6px rgba(3, 135, 131, 0.2);
+  border-radius: 5px;
   text-align: center;
   padding: 20px;
   background-color: rgba(217, 217, 217, 0.07);
+}
+.today-weather .description {
+  text-transform: capitalize;
 }
 .weather-temperature .units {
   position: relative;
