@@ -94,10 +94,7 @@ function displayWeatherCondition(response) {
 
   document
     .querySelector("#main-icon")
-    .setAttribute(
-      "src",
-      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-    );
+    .setAttribute("src", `img/${response.data.weather[0].icon}.png`);
   document
     .querySelector("#main-icon")
     .setAttribute("alt", response.data.weather[0].description);
@@ -141,4 +138,4 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
-search("Miami");
+search("Puerto Rico");
