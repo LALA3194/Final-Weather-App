@@ -46,12 +46,12 @@ function displayForecast(response) {
   <div class="col">
                 <span class="day">${formatDays(forecastDay.dt)}</span>
                 <div class="temp">
-                <span class="max-temp">${Math.round(
+                <span class="max-temp">H:${Math.round(
                   forecastDay.temp.max
                 )}℉ </span> 
-                <span class="min-temp">${Math.round(
+                <span class="min-temp">L:${Math.round(
                   forecastDay.temp.min
-                )}℃</span>
+                )}℉</span>
                 </div>
                 </div>
                 <div class="col-auto">
