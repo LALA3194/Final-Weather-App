@@ -124,3 +124,10 @@ small .icon-link {
   color: #385170;
   text-shadow: 5px 5px 10px rgba(1, 119, 115, 0.21);
 }
+
+@media (max-width: 700px) {
+  .today-weather {
+    border: none;
+    max-width: fit-content;
+  }
+}
